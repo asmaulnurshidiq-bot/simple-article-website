@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Artikel | EduNews</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">EduNews</div>
+  <nav>
+    <a href="index.html" >Home</a>
+    <a href="Artikel.html">Artikel</a>
+    <a href="Tentang.html">Tentang</a>
+    <a href="Upload.html" class="active">Upload Artikel</a>
+    <button id="darkToggle">🌙</button>
+  </nav>
+</header>
+
+<main class="upload-container">
+
+  <h1>Upload Artikel Baru</h1>
+  <p class="desc">
+    Silakan isi form di bawah untuk menambahkan artikel ke website EduNews.
+  </p>
+
+  <form id="articleForm" class="upload-form">
+
+    <label>Judul Artikel</label>
+    <input type="text" id="title" required>
+
+    <label>Tanggal</label>
+    <input type="date" id="date" required>
+
+    <label>Gambar (URL / path)</label>
+    <input type="text" id="image" placeholder="gbr/contoh.png">
+
+    <label>Ringkasan (Excerpt)</label>
+    <textarea id="excerpt" rows="3" required></textarea>
+
+    <label>Isi Artikel</label>
+    <textarea id="content" rows="8" required></textarea>
+
+    <button type="submit" class="btn">
+      Upload Artikel
+    </button>
+
+  </form>
+
+  <div id="result"></div>
+
+</main>
+
+<footer>
+  @ Asmaul Nur Shidiq | 251011700283 | 01SIFP005
+</footer>
+
+<script src="js/upload.js"></script>
+<script src="js/data.js"></script>
+<script src="js/article.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
